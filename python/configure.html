@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module configure</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>configure</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cprojects%5Cpython%5Cpyqtpropertybrowser%5Cpython%5Cconfigure.py">c:\projects\python\pyqtpropertybrowser\python\configure.py</a></font></td></tr></table>
+    <p><tt>#&nbsp;Copyright&nbsp;(c)&nbsp;2015,&nbsp;Riverbank&nbsp;Computing&nbsp;Limited<br>
+#&nbsp;All&nbsp;rights&nbsp;reserved.<br>
+#<br>
+#&nbsp;Redistribution&nbsp;and&nbsp;use&nbsp;in&nbsp;source&nbsp;and&nbsp;binary&nbsp;forms,&nbsp;with&nbsp;or&nbsp;without<br>
+#&nbsp;modification,&nbsp;are&nbsp;permitted&nbsp;provided&nbsp;that&nbsp;the&nbsp;following&nbsp;conditions&nbsp;are&nbsp;met:<br>
+#<br>
+#&nbsp;1.&nbsp;Redistributions&nbsp;of&nbsp;source&nbsp;code&nbsp;must&nbsp;retain&nbsp;the&nbsp;above&nbsp;copyright&nbsp;notice,<br>
+#&nbsp;&nbsp;&nbsp;&nbsp;this&nbsp;list&nbsp;of&nbsp;conditions&nbsp;and&nbsp;the&nbsp;following&nbsp;disclaimer.<br>
+#<br>
+#&nbsp;2.&nbsp;Redistributions&nbsp;in&nbsp;binary&nbsp;form&nbsp;must&nbsp;reproduce&nbsp;the&nbsp;above&nbsp;copyright&nbsp;notice,<br>
+#&nbsp;&nbsp;&nbsp;&nbsp;this&nbsp;list&nbsp;of&nbsp;conditions&nbsp;and&nbsp;the&nbsp;following&nbsp;disclaimer&nbsp;in&nbsp;the&nbsp;documentation<br>
+#&nbsp;&nbsp;&nbsp;&nbsp;and/or&nbsp;other&nbsp;materials&nbsp;provided&nbsp;with&nbsp;the&nbsp;distribution.<br>
+#<br>
+#&nbsp;THIS&nbsp;SOFTWARE&nbsp;IS&nbsp;PROVIDED&nbsp;BY&nbsp;THE&nbsp;COPYRIGHT&nbsp;HOLDERS&nbsp;AND&nbsp;CONTRIBUTORS&nbsp;"AS&nbsp;IS"<br>
+#&nbsp;AND&nbsp;ANY&nbsp;EXPRESS&nbsp;OR&nbsp;IMPLIED&nbsp;WARRANTIES,&nbsp;INCLUDING,&nbsp;BUT&nbsp;NOT&nbsp;LIMITED&nbsp;TO,&nbsp;THE<br>
+#&nbsp;IMPLIED&nbsp;WARRANTIES&nbsp;OF&nbsp;MERCHANTABILITY&nbsp;AND&nbsp;FITNESS&nbsp;FOR&nbsp;A&nbsp;PARTICULAR&nbsp;PURPOSE<br>
+#&nbsp;ARE&nbsp;DISCLAIMED.&nbsp;IN&nbsp;NO&nbsp;EVENT&nbsp;SHALL&nbsp;THE&nbsp;COPYRIGHT&nbsp;HOLDER&nbsp;OR&nbsp;CONTRIBUTORS&nbsp;BE<br>
+#&nbsp;LIABLE&nbsp;FOR&nbsp;ANY&nbsp;DIRECT,&nbsp;INDIRECT,&nbsp;INCIDENTAL,&nbsp;SPECIAL,&nbsp;EXEMPLARY,&nbsp;OR<br>
+#&nbsp;CONSEQUENTIAL&nbsp;DAMAGES&nbsp;(INCLUDING,&nbsp;BUT&nbsp;NOT&nbsp;LIMITED&nbsp;TO,&nbsp;PROCUREMENT&nbsp;OF<br>
+#&nbsp;SUBSTITUTE&nbsp;GOODS&nbsp;OR&nbsp;SERVICES;&nbsp;LOSS&nbsp;OF&nbsp;USE,&nbsp;DATA,&nbsp;OR&nbsp;PROFITS;&nbsp;OR&nbsp;BUSINESS<br>
+#&nbsp;INTERRUPTION)&nbsp;HOWEVER&nbsp;CAUSED&nbsp;AND&nbsp;ON&nbsp;ANY&nbsp;THEORY&nbsp;OF&nbsp;LIABILITY,&nbsp;WHETHER&nbsp;IN<br>
+#&nbsp;CONTRACT,&nbsp;STRICT&nbsp;LIABILITY,&nbsp;OR&nbsp;TORT&nbsp;(INCLUDING&nbsp;NEGLIGENCE&nbsp;OR&nbsp;OTHERWISE)<br>
+#&nbsp;ARISING&nbsp;IN&nbsp;ANY&nbsp;WAY&nbsp;OUT&nbsp;OF&nbsp;THE&nbsp;USE&nbsp;OF&nbsp;THIS&nbsp;SOFTWARE,&nbsp;EVEN&nbsp;IF&nbsp;ADVISED&nbsp;OF&nbsp;THE<br>
+#&nbsp;POSSIBILITY&nbsp;OF&nbsp;SUCH&nbsp;DAMAGE.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="glob.html">glob</a><br>
+<a href="optparse.html">optparse</a><br>
+</td><td width="25%" valign=top><a href="os.html">os</a><br>
+<a href="sys.html">sys</a><br>
+</td><td width="25%" valign=top><a href="distutils.sysconfig.html">distutils.sysconfig</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="configure.html#ModuleConfiguration">ModuleConfiguration</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="ModuleConfiguration">class <strong>ModuleConfiguration</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>This&nbsp;class&nbsp;encapsulates&nbsp;all&nbsp;the&nbsp;module&nbsp;specific&nbsp;information&nbsp;needed&nbsp;by<br>
+the&nbsp;rest&nbsp;of&nbsp;this&nbsp;script&nbsp;to&nbsp;implement&nbsp;a&nbsp;configure.py&nbsp;script&nbsp;for&nbsp;modules&nbsp;that<br>
+build&nbsp;on&nbsp;top&nbsp;of&nbsp;PyQt.<br>
+&nbsp;<br>
+Functions&nbsp;implemented&nbsp;by&nbsp;the&nbsp;rest&nbsp;of&nbsp;this&nbsp;script&nbsp;that&nbsp;begin&nbsp;with&nbsp;an<br>
+underscore&nbsp;are&nbsp;considered&nbsp;internal&nbsp;and&nbsp;shouldn't&nbsp;be&nbsp;called&nbsp;from<br>
+here.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="ModuleConfiguration-apply_options"><strong>apply_options</strong></a>(self, target_configuration, options)</dt><dd><tt>Apply&nbsp;the&nbsp;module&nbsp;specific&nbsp;command&nbsp;line&nbsp;options&nbsp;to&nbsp;the&nbsp;target<br>
+configuration.<br>
+&nbsp;<br>
+target_configuration&nbsp;is&nbsp;the&nbsp;target&nbsp;configuration.&nbsp;options&nbsp;are<br>
+the&nbsp;parsed&nbsp;options.</tt></dd></dl>
+
+<dl><dt><a name="ModuleConfiguration-check_module"><strong>check_module</strong></a>(self, target_configuration)</dt><dd><tt>Perform&nbsp;any&nbsp;module&nbsp;specific&nbsp;checks&nbsp;now&nbsp;that&nbsp;the&nbsp;target&nbsp;configuration<br>
+is&nbsp;complete.<br>
+&nbsp;<br>
+target_configuration&nbsp;is&nbsp;the&nbsp;target&nbsp;configuration.</tt></dd></dl>
+
+<dl><dt><a name="ModuleConfiguration-get_mac_wrapped_library_file"><strong>get_mac_wrapped_library_file</strong></a>(self, target_configuration)</dt><dd><tt>Return&nbsp;the&nbsp;full&nbsp;pathname&nbsp;of&nbsp;the&nbsp;file&nbsp;that&nbsp;implements&nbsp;the&nbsp;library<br>
+being&nbsp;wrapped&nbsp;by&nbsp;the&nbsp;module&nbsp;as&nbsp;it&nbsp;would&nbsp;be&nbsp;called&nbsp;on&nbsp;OS/X&nbsp;so&nbsp;that&nbsp;the<br>
+module&nbsp;will&nbsp;reference&nbsp;it&nbsp;explicitly&nbsp;without&nbsp;DYLD_LIBRARY_PATH&nbsp;being<br>
+set.<br>
+&nbsp;<br>
+If&nbsp;it&nbsp;is&nbsp;None&nbsp;or&nbsp;an&nbsp;empty&nbsp;string&nbsp;then&nbsp;the&nbsp;default&nbsp;is&nbsp;used.<br>
+target_configuration&nbsp;is&nbsp;the&nbsp;target&nbsp;configuration.</tt></dd></dl>
+
+<dl><dt><a name="ModuleConfiguration-get_qmake_configuration"><strong>get_qmake_configuration</strong></a>(self, target_configuration)</dt><dd><tt>Return&nbsp;a&nbsp;dict&nbsp;of&nbsp;qmake&nbsp;configuration&nbsp;values&nbsp;for&nbsp;CONFIG,&nbsp;DEFINES,<br>
+INCLUDEPATH,&nbsp;LIBS&nbsp;and&nbsp;QT.<br>
+&nbsp;<br>
+If&nbsp;value&nbsp;names&nbsp;(i.e.&nbsp;dict&nbsp;keys)&nbsp;have&nbsp;either&nbsp;'Qt4'&nbsp;or&nbsp;'Qt5'<br>
+prefixes&nbsp;then&nbsp;they&nbsp;are&nbsp;specific&nbsp;to&nbsp;the&nbsp;corresponding&nbsp;version&nbsp;of<br>
+Qt.&nbsp;&nbsp;target_configuration&nbsp;is&nbsp;the&nbsp;target&nbsp;configuration.</tt></dd></dl>
+
+<dl><dt><a name="ModuleConfiguration-get_sip_file"><strong>get_sip_file</strong></a>(self, target_configuration)</dt><dd><tt>Return&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;module's&nbsp;.sip&nbsp;file.<br>
+&nbsp;<br>
+target_configuration&nbsp;is&nbsp;the&nbsp;target&nbsp;configuration.</tt></dd></dl>
+
+<dl><dt><a name="ModuleConfiguration-get_sip_flags"><strong>get_sip_flags</strong></a>(self, target_configuration)</dt><dd><tt>Return&nbsp;the&nbsp;list&nbsp;of&nbsp;module-specific&nbsp;flags&nbsp;to&nbsp;pass&nbsp;to&nbsp;SIP.<br>
+target_configuration&nbsp;is&nbsp;the&nbsp;target&nbsp;configuration.</tt></dd></dl>
+
+<dl><dt><a name="ModuleConfiguration-get_sip_installs"><strong>get_sip_installs</strong></a>(self, target_configuration)</dt><dd><tt>Return&nbsp;a&nbsp;tuple&nbsp;of&nbsp;the&nbsp;installation&nbsp;directory&nbsp;of&nbsp;the&nbsp;module's&nbsp;.sip<br>
+files&nbsp;and&nbsp;a&nbsp;sequence&nbsp;of&nbsp;the&nbsp;names&nbsp;of&nbsp;each&nbsp;of&nbsp;the&nbsp;.sip&nbsp;files&nbsp;relative&nbsp;to<br>
+the&nbsp;directory&nbsp;containing&nbsp;this&nbsp;configuration&nbsp;script.<br>
+&nbsp;<br>
+None&nbsp;is&nbsp;returned&nbsp;if&nbsp;the&nbsp;module's&nbsp;.sip&nbsp;files&nbsp;are&nbsp;not&nbsp;to&nbsp;be<br>
+installed.&nbsp;target_configuration&nbsp;is&nbsp;the&nbsp;target&nbsp;configuration.</tt></dd></dl>
+
+<dl><dt><a name="ModuleConfiguration-inform_user"><strong>inform_user</strong></a>(self, target_configuration)</dt><dd><tt>Inform&nbsp;the&nbsp;user&nbsp;about&nbsp;module&nbsp;specific&nbsp;configuration&nbsp;information.<br>
+&nbsp;<br>
+target_configuration&nbsp;is&nbsp;the&nbsp;target&nbsp;configuration.</tt></dd></dl>
+
+<dl><dt><a name="ModuleConfiguration-init_optparser"><strong>init_optparser</strong></a>(self, optparser, target_configuration)</dt><dd><tt>Perform&nbsp;any&nbsp;module&nbsp;specific&nbsp;initialisation&nbsp;of&nbsp;the&nbsp;command&nbsp;line<br>
+option&nbsp;parser.<br>
+&nbsp;<br>
+To&nbsp;avoid&nbsp;name&nbsp;clashes&nbsp;destination&nbsp;attributes&nbsp;should&nbsp;be&nbsp;given&nbsp;a<br>
+module&nbsp;specific&nbsp;prefix.&nbsp;&nbsp;optparser&nbsp;is&nbsp;the&nbsp;option&nbsp;parser.<br>
+target_configuration&nbsp;is&nbsp;the&nbsp;target&nbsp;configuration.</tt></dd></dl>
+
+<dl><dt><a name="ModuleConfiguration-init_target_configuration"><strong>init_target_configuration</strong></a>(self, target_configuration)</dt><dd><tt>Perform&nbsp;any&nbsp;module&nbsp;specific&nbsp;initialisation&nbsp;of&nbsp;the&nbsp;target&nbsp;target<br>
+configuration.<br>
+&nbsp;<br>
+Typically&nbsp;this&nbsp;is&nbsp;the&nbsp;initialisation&nbsp;of&nbsp;module&nbsp;specific<br>
+attributes.&nbsp;&nbsp;To&nbsp;avoid&nbsp;name&nbsp;clashes&nbsp;attributes&nbsp;should&nbsp;be&nbsp;given&nbsp;a<br>
+module&nbsp;specific&nbsp;prefix.&nbsp;&nbsp;target_configuration&nbsp;is&nbsp;the&nbsp;target<br>
+configuration.</tt></dd></dl>
+
+<dl><dt><a name="ModuleConfiguration-pre_code_generation"><strong>pre_code_generation</strong></a>(self, target_config)</dt><dd><tt>Perform&nbsp;any&nbsp;module&nbsp;specific&nbsp;initialisation&nbsp;prior&nbsp;to&nbsp;generating&nbsp;the<br>
+code.<br>
+&nbsp;<br>
+target_config&nbsp;is&nbsp;the&nbsp;target&nbsp;configuration.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>descriptive_name</strong> = 'QtPropertyBrowser'</dl>
+
+<dl><dt><strong>legacy_configuration_script</strong> = True</dl>
+
+<dl><dt><strong>minimum_sip_version</strong> = '4.16'</dl>
+
+<dl><dt><strong>name</strong> = 'QtPropertyBrowser'</dl>
+
+<dl><dt><strong>no_exceptions</strong> = True</dl>
+
+<dl><dt><strong>protected_is_public_is_supported</strong> = True</dl>
+
+<dl><dt><strong>pyqt4_is_supported</strong> = True</dl>
+
+<dl><dt><strong>pyqt5_is_default</strong> = True</dl>
+
+<dl><dt><strong>pyqt5_is_supported</strong> = True</dl>
+
+<dl><dt><strong>qprbrwsntilla_api_file</strong> = ''</dl>
+
+<dl><dt><strong>support_email_address</strong> = 'support@riverbankcomputing.com'</dl>
+
+<dl><dt><strong>user_configuration_file_is_supported</strong> = True</dl>
+
+<dl><dt><strong>user_pyqt_sip_flags_is_supported</strong> = True</dl>
+
+<dl><dt><strong>version</strong> = '1.01'</dl>
+
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-error"><strong>error</strong></a>(msg)</dt><dd><tt>Display&nbsp;an&nbsp;error&nbsp;message&nbsp;and&nbsp;terminate.<br>
+&nbsp;<br>
+msg&nbsp;is&nbsp;the&nbsp;text&nbsp;of&nbsp;the&nbsp;error&nbsp;message.</tt></dd></dl>
+ <dl><dt><a name="-inform"><strong>inform</strong></a>(msg)</dt><dd><tt>Display&nbsp;an&nbsp;information&nbsp;message.<br>
+&nbsp;<br>
+msg&nbsp;is&nbsp;the&nbsp;text&nbsp;of&nbsp;the&nbsp;error&nbsp;message.</tt></dd></dl>
+ <dl><dt><a name="-optparser_store_abspath"><strong>optparser_store_abspath</strong></a>(option, opt_str, value, parser)</dt><dd><tt>An&nbsp;optparser&nbsp;callback&nbsp;that&nbsp;saves&nbsp;an&nbsp;option&nbsp;as&nbsp;an&nbsp;absolute&nbsp;pathname.</tt></dd></dl>
+ <dl><dt><a name="-optparser_store_abspath_dir"><strong>optparser_store_abspath_dir</strong></a>(option, opt_str, value, parser)</dt><dd><tt>An&nbsp;optparser&nbsp;callback&nbsp;that&nbsp;saves&nbsp;an&nbsp;option&nbsp;as&nbsp;the&nbsp;absolute&nbsp;pathname&nbsp;of<br>
+an&nbsp;existing&nbsp;directory.</tt></dd></dl>
+ <dl><dt><a name="-optparser_store_abspath_exe"><strong>optparser_store_abspath_exe</strong></a>(option, opt_str, value, parser)</dt><dd><tt>An&nbsp;optparser&nbsp;callback&nbsp;that&nbsp;saves&nbsp;an&nbsp;option&nbsp;as&nbsp;the&nbsp;absolute&nbsp;pathname&nbsp;of<br>
+an&nbsp;existing&nbsp;executable.</tt></dd></dl>
+ <dl><dt><a name="-quote"><strong>quote</strong></a>(path)</dt><dd><tt>Return&nbsp;a&nbsp;path&nbsp;with&nbsp;quotes&nbsp;added&nbsp;if&nbsp;it&nbsp;contains&nbsp;spaces.<br>
+&nbsp;<br>
+path&nbsp;is&nbsp;the&nbsp;path.</tt></dd></dl>
+ <dl><dt><a name="-read_define"><strong>read_define</strong></a>(filename, define)</dt><dd><tt>Read&nbsp;the&nbsp;value&nbsp;of&nbsp;a&nbsp;#define&nbsp;from&nbsp;a&nbsp;file.<br>
+&nbsp;<br>
+filename&nbsp;is&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;file.&nbsp;&nbsp;define&nbsp;is&nbsp;the&nbsp;name&nbsp;of&nbsp;the<br>
+#define.&nbsp;&nbsp;None&nbsp;is&nbsp;returned&nbsp;if&nbsp;there&nbsp;was&nbsp;no&nbsp;such&nbsp;#define.</tt></dd></dl>
+ <dl><dt><a name="-version_from_string"><strong>version_from_string</strong></a>(version_str)</dt><dd><tt>Convert&nbsp;a&nbsp;version&nbsp;string&nbsp;of&nbsp;the&nbsp;form&nbsp;m,&nbsp;m.n&nbsp;or&nbsp;m.n.o&nbsp;to&nbsp;an&nbsp;encoded<br>
+version&nbsp;number&nbsp;(or&nbsp;None&nbsp;if&nbsp;it&nbsp;was&nbsp;an&nbsp;invalid&nbsp;format).<br>
+&nbsp;<br>
+version_str&nbsp;is&nbsp;the&nbsp;version&nbsp;string.</tt></dd></dl>
+</td></tr></table>
+</body></html>
